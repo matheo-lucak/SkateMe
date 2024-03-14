@@ -6,9 +6,7 @@ use core::future::pending;
 use embassy_executor::Spawner;
 use embassy_time::{Duration, Timer};
 use esp_backtrace as _;
-use hal::{
-    clock::ClockControl, embassy, peripherals::Peripherals, prelude::*, timer::TimerGroup, Delay,
-};
+use hal::{clock::ClockControl, embassy, peripherals::Peripherals, prelude::*};
 
 #[embassy_executor::task]
 async fn basic_task() {
