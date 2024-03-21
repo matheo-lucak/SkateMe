@@ -3,17 +3,6 @@
 version = 3
 
 [[package]]
-name = "accel-stepper"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6b420075edf09a2878489824af5ad2e16dd4d2745c370dff3fbce2f8d11a8fcc"
-dependencies = [
- "arrayvec",
- "libm",
- "void",
-]
-
-[[package]]
 name = "adler"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -633,12 +622,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "libm"
-version = "0.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7fc7aa29613bd6a620df431842069224d8bc9011086b1db4c0e0cd47fa03ec9a"
-
-[[package]]
 name = "litrs"
 version = "0.4.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -866,7 +849,6 @@ dependencies = [
 name = "rust-test-esp"
 version = "0.1.0"
 dependencies = [
- "accel-stepper",
  "arrayvec",
  "embassy-executor",
  "embassy-sync",

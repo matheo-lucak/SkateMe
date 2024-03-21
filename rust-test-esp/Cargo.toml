@@ -25,7 +25,6 @@ embassy-time = { version = "0.3.0", features = ["generic-queue-32"] }
 arrayvec={version = "0.4.12", default-features = false}
 embedded-hal-async = "1.0.0"
 embedded-hal = "1.0.0"
-accel-stepper = "=0.1.0"
 [profile.dev]
 # Rust debug is too slow. 
 # For debug builds always builds with some optimization
