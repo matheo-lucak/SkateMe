@@ -46,16 +46,13 @@ const MAX_ENCODE_SIZE: usize = 255;
 pub type Buffer = String<MAX_ENCODE_SIZE>;
 
 impl Message {
-    // const MAX_ENCODE_SIZE: usize = 255;
-    // pub type Buffer = String<{ Self::MAX_ENCODE_SIZE }>;
+    const CURRENT_VERSION: u16 = 0;
 
     pub fn new(id: u32, body: Body) -> Message {
-        const VERSION: u16 = 0;
-
         Message {
             header: Header {
                 id,
-                version: VERSION,
+                version: Self::CURRENT_VERSION,
             },
             body,
         }
